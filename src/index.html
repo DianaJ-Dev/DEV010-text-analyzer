@@ -5,9 +5,39 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
   <script src="index.js" type="module"></script>
+</head>
+<!--titulo-->
+ <header>
+  <h1>Text Analyzer 01</h1>
+ </header>
+<body>
+
+  <!--cuandro de texto-->
+  <div class="box"> 
+    <label for="texto"> Analiza tu texto .... </label>
+    <textarea name="user-input" rows="10" cols="80" placeholder="Ingresa texto"></textarea>
+    
+  </div>
+      <div class="box">
+      <button id="reset-button">Borrar</button>
+  </div>
+<!-- ctrl + }] -->
+<!--Lita de recuento-->
+  <div id="resultados"> 
+   <ul class = "outer-ul">
+    <li data-testid="word-count" class="wordCount">Total palabras : 19</li>
+    <li data-testid="character-count" class="characterCount">Recuento caracteres : 123</li>
+    <li data-testid="character-no-spaces-count" class="characterNoSpacesCount">Recuento total caracteres: 102</li>
+    <li data-testid="number-count" class="numberCount">Total numeros: 0</li>
+    <li data-testid="number-sum" class="dataTestId">Suma números: 0</li>
+    <li data-testid="word-length-average" class= "wordLengthAverage">longitud palabras: 5.53</li>
+   </ul>
+  </div>
+  <!--pie de pagina-->
+<footer>
+  <p>Primer proyecto - Laboratoria 2023 Diana Matamoros </p>
+    </footer>  
 </body>
 </html>
+
