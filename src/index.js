@@ -2,7 +2,7 @@ import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 const editor = document.querySelector('[name="user-input"]');
-const wordCount = document.querySelector('.wordCount');
+const wordCount = document.querySelector('[data-testid="word-count"]');
 editor.addEventListener('keyup', function() {
   const text = editor.value;
   const count = analyzer.getWordCount(text);
@@ -10,7 +10,7 @@ editor.addEventListener('keyup', function() {
 });
 
 const retornarcaracteres = document.querySelector('[name="user-input"]');
-const charactercount = document.querySelector('.characterCount');
+const charactercount = document.querySelector('[data-testid="character-count"]');
 retornarcaracteres.addEventListener('keyup', function() {
   const text = retornarcaracteres.value;
   const count = analyzer.getCharacterCount(text)
@@ -18,7 +18,7 @@ retornarcaracteres.addEventListener('keyup', function() {
 });
 
 const recuentosiespacios = document.querySelector('[name="user-input"]');
-const characternospacescount = document.querySelector('.characterNoSpacesCount');
+const characternospacescount = document.querySelector('[data-testid="character-no-spaces-count"]');
 recuentosiespacios.addEventListener('keyup', function() {
   const text = recuentosiespacios.value;
   const count = analyzer.getCharacterCountExcludingSpaces(text)
@@ -26,7 +26,7 @@ recuentosiespacios.addEventListener('keyup', function() {
 });
 
 const mediadepalabras = document.querySelector('[name="user-input"]');
-const wordlengthaverage = document.querySelector('.wordLengthAverage');
+const wordlengthaverage = document.querySelector('[data-testid="number-count"]');
 mediadepalabras.addEventListener('keyup',function(){
   const text = mediadepalabras.value;
   const count = analyzer.getAverageWordLength(text);
@@ -34,7 +34,7 @@ mediadepalabras.addEventListener('keyup',function(){
 });
 
 const Recuentonumeros = document.querySelector('[name="user-input"]');
-const numbercount = document.querySelector('.numberCount');
+const numbercount = document.querySelector('[data-testid="number-sum"]');
 Recuentonumeros.addEventListener('keyup', function(){
   const text = Recuentonumeros.value;
   const count = analyzer.getNumberCount(text);
@@ -43,7 +43,7 @@ Recuentonumeros.addEventListener('keyup', function(){
 })
 
 const Totalnumeros = document.querySelector('[name="user-input"]');
-const datatestid = document.querySelector('.dataTestId');
+const datatestid = document.querySelector('[data-testid="word-length-average"]');
 Totalnumeros.addEventListener('keyup',function(){
   const text= Totalnumeros.value;
   const count = analyzer.getNumberSum(text);
@@ -53,11 +53,11 @@ Totalnumeros.addEventListener('keyup',function(){
 const miTextArea = document.querySelector('[name="user-input"]');
 const resetButton = document.getElementById('reset-button'); 
 resetButton.addEventListener('click',function() {
-  miTextArea.value='';
-  wordCount.innerHTML="0";
-  charactercount.innerHTML="0";
-  characternospacescount.innerHTML="0";
-  numbercount.innerHTML="0";
-  datatestid.innerHTML="0";
-  wordlengthaverage.innerHTML="0";
+  miTextArea.value="";
+  wordCount.innerHTML="Recuento caracteres ";
+  charactercount.innerHTML="Recuento caracteres";
+  characternospacescount.innerHTML="Recuento total caracteres";
+  numbercount.innerHTML="Total numeros";
+  datatestid.innerHTML="Suma todos los número";
+  wordlengthaverage.innerHTML="longitud palabras";
 });

@@ -39,16 +39,6 @@ ul {
     padding: 10px ;
     list-style: none;
     }
-      
-.outer-ul li {
-    width: 50px;
-    justify-content:center;
-    width: 100px; /* Ancho del cuadro */
-    height: 90px; /* Altura del cuadro */
-    border: 1px solid black; /* Borde para visualizar el cuadro */
-    padding: 10px;
-    background-color:  rgb(220, 222, 231);
-    }
 
 #reset-button {
     padding: 10px;
@@ -66,9 +56,21 @@ li {
     box-sizing:border-box;
 }   
 
-.style {
-    box-sizing:border-box;
-}
+.Total {
+    width: 50px;
+    justify-content:center;
+    width: 120px; /* Ancho del cuadro */
+    height: 60px; /* Altura del cuadro */
+    border: 1px solid black; /* Borde para visualizar el cuadro */
+    padding: 10px;
+    background-color:  rgb(220, 222, 231);
+    
+    }  
+
+
+
+
+
 
 
 
