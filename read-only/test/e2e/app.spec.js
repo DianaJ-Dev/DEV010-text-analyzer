@@ -28,12 +28,7 @@ test.describe('Para un texto con sólo palábras:', () => {
 
   });
 
-  test('Números: 0', async ({ page }) => {const elemento = await page.locator('li[data-testid="number-count"]');
-
-  const valorElemento = await elemento.innerText()
-  
-  console.log({valorElemento});
-  
+  test('Números: 0', async ({ page }) => {
     await expect(page.locator('li[data-testid="number-count"]:has-text("0")')).toBeVisible();
   });
 

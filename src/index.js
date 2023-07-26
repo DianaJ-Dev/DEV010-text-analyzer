@@ -1,12 +1,12 @@
 import analyzer from './analyzer.js';
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-const editor = document.querySelector('[name="user-input"]');
-const wordCount = document.querySelector('[data-testid="word-count"]');
-editor.addEventListener('keyup', function() {
-  const text = editor.value;
-  const count = analyzer.getWordCount(text);
-  wordCount.innerHTML = 'Total palabras '+ count; 
+const editor = document.querySelector('[name="user-input"]'); //traigo doc uctilizando etiqueta name 
+const wordCount = document.querySelector('[data-testid="word-count"]'); // traigo doc uctilizando etiqueta parrafo
+editor.addEventListener('keyup', function() { //Escuchar evento uctilizando keyup (soltar tecla despues de presionar)
+  const text = editor.value;//trae el valor actual ingresado el cuadro de texto
+  const count = analyzer.getWordCount(text);// traigo info del otro js 
+  wordCount.innerHTML = 'Total palabras '+ count; //Actualiza cotenido de html
 });
 
 const retornarcaracteres = document.querySelector('[name="user-input"]');
@@ -52,7 +52,7 @@ Totalnumeros.addEventListener('keyup',function(){
 
 const miTextArea = document.querySelector('[name="user-input"]');
 const resetButton = document.getElementById('reset-button'); 
-resetButton.addEventListener('click',function() {
+resetButton.addEventListener('click',function() { //Escuchar evento para qeue cuado yo haga click me traiga la informacion
   miTextArea.value="";
   wordCount.innerHTML="Recuento caracteres ";
   charactercount.innerHTML="Recuento caracteres";

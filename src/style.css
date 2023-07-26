@@ -1,9 +1,9 @@
 footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #4392aa;
-    color: #faf5f5;
+    display: flex; /* visualizar contenido  */
+    justify-content: center; /* se aplica a display: flex  para que el texto quede centrado*/
+    padding: 10px; /* Espacio entre el contenido y los bordes*/
+    background-color: #4392aa; /*color de fondo*/
+    color: #f5eeee; /*Color de letra*/
     }
 
 textarea[name="user-input"] {
@@ -33,11 +33,10 @@ header {
 ul {
     display:flex;
     justify-content:space-between;
-    margin: 30px 60px 45px 85px;
+    margin: 30px 60px 45px 85px; 
     padding: 30px;
     border: 1px;
     padding: 10px ;
-    list-style: none;
     }
 
 #reset-button {
@@ -46,22 +45,13 @@ ul {
     justify-content:center;
     background-color: rgb(220, 222, 231);
     }
-
-li {
-    margin: 5px; 
-    width: 5px; 
-    border: none; 
-    padding: 10px; 
-    height: 5px;
-    box-sizing:border-box;
-}   
+   
 
 .Total {
-    width: 50px;
     justify-content:center;
     width: 120px; /* Ancho del cuadro */
     height: 60px; /* Altura del cuadro */
-    border: 1px solid black; /* Borde para visualizar el cuadro */
+    border: 1px solid rgb(243, 238, 238); /* Borde para visualizar el cuadro */
     padding: 10px;
     background-color:  rgb(220, 222, 231);
     
